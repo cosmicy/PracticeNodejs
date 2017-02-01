@@ -18,7 +18,7 @@ var users = {
   }
 };
 
-router.all('/:username', function(req, res) {
+router.all('/:username', function(req, res, next) {
   //check if user existed
   if (users[req.params.username]) {
     next();
