@@ -28,7 +28,7 @@ router.all('/:username', function(req, res, next) {
 });
 
 router.get('/:username', function(req, res) {
-  res.send('respond with a username: ' + req.params.username);
+  res.send(JSON.stringify(req.params.username));
 });
 
 router.put('/:username', function(req, res) {
