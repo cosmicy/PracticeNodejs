@@ -6,4 +6,12 @@ router.get('/', function(req, res) {
   res.send('respond with a resource');
 });
 
+router.get('/one', function(req, res) {
+  res.send('respond with a user one');
+});
+
+router.get('/:username', function(req, res) {
+  res.send('respond with a username: ' + req.params.username);
+});
+
 module.exports = router;
