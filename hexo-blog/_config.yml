@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Cosmicy's Cosmos
+subtitle: ~_~!
 description:
-author: John Doe
-language:
+author: Cosmicy
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landfarz
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
