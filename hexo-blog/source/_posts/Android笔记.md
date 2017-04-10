@@ -1,7 +1,7 @@
 ---
 title: Android笔记
 date: 2017-03-15 11:26:36
-tags: android,笔记
+tags: [Android,笔记]
 ---
 
 # android studio的lib和jniLibs
