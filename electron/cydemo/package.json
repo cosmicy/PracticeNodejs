@@ -1,0 +1,9 @@
+{
+	"name":"cy",
+	"version":"0.1.0",
+	"main":"main.js",
+
+	"scripts": {
+		"packager":"electron-packager ./app --win --out ./OutApp --version 1.4.0 --overwrite --icon=./app/img/icon/icon.ico"
+	}
+}
