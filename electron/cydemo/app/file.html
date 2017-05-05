@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="holder">
+		Drag your file here
+	</div>
+	<script>
+		const holder = document.getElementById('holder')
+		holder.ondragover = () => {
+			return false;
+		}
+		holder.ondragleave = holder.ondragend = () => {
+			return false;
+		}
+		holder.ondrop = (e) => {
+			e.preventDefault()
+			for (let f  of e.dataTransfer.files) {
+				console.log('Files you draged here:',f.path)
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>
