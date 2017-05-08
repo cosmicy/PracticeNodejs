@@ -13,6 +13,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>可以在App.js里修改，这里的语法高亮在sublime是不对的，因为在js里嵌入了html代码</p>
+        <p>在VSCode里语法高亮正确！</p>
       </div>
     );
   }
