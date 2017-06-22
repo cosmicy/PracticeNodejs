@@ -11,7 +11,9 @@ app.get('/',function(req, res){
 
 	if (q != null) {
 		var md5 = utility.md5(q);
-		res.send(md5);
+		var sha1 = utility.sha1(q);
+		res.send(md5 + '<br>' + sha1);
+		//res.send(sha1); //不能再次send
 	} else {
 		res.send('q undefined');
 	}
