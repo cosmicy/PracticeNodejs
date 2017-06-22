@@ -9,9 +9,13 @@ app.get('/',function(req, res){
 
 	var q = req.query.q;
 
-	var md5 = utility.md5(q);
-	
-	res.send(md5);
+	if (q != null) {
+		var md5 = utility.md5(q);
+		res.send(md5);
+	} else {
+		res.send('q undefined');
+	}
+
 });
 
 app.listen(3000, function (req,res) {
