@@ -1,0 +1,81 @@
+.mod-share {
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    border: 1px #CCC solid;
+    background: url(/images/bgs_share_system.png) repeat-x 0 0;
+}
+
+.mod-share span.copy-url,
+.mod-share span.add-favorite {
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.mod-share span.copy-url {
+    background: url(/images/bgs_share_system.png) no-repeat 2px -38px;
+}
+
+.mod-share span.add-favorite {
+    background: url(/images/bgs_share_system.png) no-repeat 2px -68px;
+}
+
+.mod-share .mod-social-share {
+    float: right;
+    padding: 0;
+    margin: 2px 0 0;
+    clear: none;
+}
+
+.mod-share .mod-social-share b,
+.mod-share .mod-social-share a {
+    float: left;
+}
+
+.mod-social-share {
+    height: 16px;
+    overflow: hidden;
+    font: 700 0/16px tahoma, sans-serif;
+    padding: 2px 5px;
+    clear: both;
+    margin: 10px 0;
+}
+
+.mod-social-share b {
+    vertical-align: top;
+    font: 12px/16px tahoma, sans-serif;
+    color: #666;
+}
+
+.mod-social-share a {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 7px;
+    background: url(/images/bgs_share_system.png) no-repeat 0 20px;
+}
+
+.mod-social-share a#share_tqq {
+    background-position: 0 -100px;
+}
+
+.mod-social-share a#share_sina {
+    background-position: 0 -120px;
+}
+
+.mod-social-share a#share_kaixin {
+    background-position: 0 -140px;
+}
+
+.mod-social-share a#share_renren {
+    background-position: 0 -160px;
+}
+
+.mod-social-share a#share_qzone {
+    background-position: 0 -180px;
+}
