@@ -5,9 +5,9 @@
 	<title>Document</title>
 </head>
 <body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.min.js"></script>
+	<script src="vue.js"></script>
 	<div id="demo">
-		<h1>{{title | uppercase}}</h1>
+		<h1>{{title.toUpperCase()}}</h1>
 		<ul>
 			<li v-for="t in todos" 
 			v-on:click="t.done = !t.done" 
