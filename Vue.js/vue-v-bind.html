@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.min.js"></script>
+	<div id="demo">
+		<h1>{{title | uppercase}}</h1>
+		<ul>
+			<li v-for="t in todos" 
+			v-on:click="t.done = !t.done" 
+			v-bind:class="t.done ? 'done':''">
+			{{t.content}}
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	var demo = new Vue({
+		el: '#demo',
+		data: {
+			title: 'todos',
+			todos: [{
+				done: true,
+				content: 'Lesssarn JavaScript'
+			}, {
+				done: false,
+				content: 'Learn Vue.js'
+			}]
+		}
+	})
+
+	//demo.todos.push({done:true,content:"fwewf5345e"})
+</script>
+
+<style type="text/css">
+	.done {
+		color:red;
+	}
+</style>
+</body>
+</html>
